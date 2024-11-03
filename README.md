@@ -1,5 +1,4 @@
-# Project Title
-C HashMap Implementation
+# C HashMap Implementation
 This project is a custom implementation of a HashMap data structure in C, designed to store words and their frequencies. It includes basic operations like insertion, lookup, and existence checks. The program also measures the time taken to perform existence checks for a large number of randomly generated words.
 
 Project Structure
