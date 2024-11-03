@@ -1,16 +1,16 @@
 # C HashMap Implementation
 This project is a custom implementation of a HashMap data structure in C, designed to store words and their frequencies. It includes basic operations like insertion, lookup, and existence checks. The program also measures the time taken to perform existence checks for a large number of randomly generated words.
 
-Project Structure
-main.c: Contains the main function to initialize the HashMap, insert entries, and check if entries exist in the map.
-StringCountHashMap.h: Header file that defines the HashMap structure and function prototypes.
-StringCountHashMap.c: Source file that implements the HashMap operations, including:
+## Project Structure
+- main.c: Contains the main function to initialize the HashMap, insert entries, and check if entries exist in the map.
+- StringCountHashMap.h: Header file that defines the HashMap structure and function prototypes.
+- StringCountHashMap.c: Source file that implements the HashMap operations, including:
 createHashMap: Creates a new HashMap with a specified initial capacity.
 insertEntry: Inserts a key-value pair (word and frequency) into the HashMap.
 getOrDefault: Gets the frequency of a word if it exists, or returns 0 if it doesn’t.
 existInTable: Checks if a word exists in the HashMap.
 printHashMap: Prints all words and their frequencies in the HashMap.
-Installation and Compilation
+## Installation and Compilation
 Install MinGW (for Windows users):
 
 Download and install MinGW from here.
