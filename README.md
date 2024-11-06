@@ -26,9 +26,9 @@ mingw32-make
 Run the Program:
 
 Execute the compiled program:
-bash
-Copy code
+```sh
 ./smdemo
+```
 Usage
 The program will:
 
