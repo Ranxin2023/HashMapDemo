@@ -19,11 +19,9 @@ Compile the Project:
 
 Open a terminal in the project directory.
 Run the following commands to compile the project:
-bash
-Copy code
-gcc -Wall -Werror -c StringCountHashMap.c -o StringCountHashMap.o
-gcc -Wall -Werror -c main.c -o main.o
-gcc main.o StringCountHashMap.o -o smdemo
+```sh
+mingw32-make
+
 Run the Program:
 
 Execute the compiled program:
