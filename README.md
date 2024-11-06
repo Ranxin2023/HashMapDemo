@@ -21,6 +21,7 @@ Open a terminal in the project directory.
 Run the following commands to compile the project:
 ```sh
 mingw32-make
+```
 
 Run the Program:
 
