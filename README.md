@@ -3,13 +3,15 @@ This project is a custom implementation of a HashMap data structure in C, design
 
 ## Project Structure
 - main.c: Contains the main function to initialize the HashMap, insert entries, and check if entries exist in the map.
-- StringCountHashMap.h: Header file that defines the HashMap structure and function prototypes.
+- StringCountHashMap.h: Header file that defines the String HashMap structure and function prototypes.
 - StringCountHashMap.c: Source file that implements the HashMap operations, including:
 createHashMap: Creates a new HashMap with a specified initial capacity.
 insertEntry: Inserts a key-value pair (word and frequency) into the HashMap.
 getOrDefault: Gets the frequency of a word if it exists, or returns 0 if it doesn’t.
 existInTable: Checks if a word exists in the HashMap.
 printHashMap: Prints all words and their frequencies in the HashMap.
+- IntHashMap.h:Header file that defines the Integer HashMap structure and function prototypes.
+- IntHashMap.c: Source file that implements the HashMap operations and include the same function as that of string hash map. 
 ## Installation and Compilation
 Install MinGW (for Windows users):
 
