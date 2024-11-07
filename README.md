@@ -38,10 +38,10 @@ Check if the words exist in the map and print the time taken for the existence c
 You can modify the number of words to be generated and checked by adjusting the WORDSLEN constant in main.c.
 
 Example Output
-bash
-Copy code
-Time spent for checking 50000 words: 0.004000 seconds
-Time spent for checking 100000 words: 0.011000 seconds
+```sh
+Time spent for checking 100000 words: 0.009000 seconds
+Time spent for checking 100000 numbers: 0.004000 seconds
+```
 Implementation Details
 Hash Function
 The HashMap uses a custom hash function to calculate the index for each word. This can be adjusted or optimized further if needed.
