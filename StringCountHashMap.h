@@ -3,20 +3,21 @@
 #include"stdio.h"
 #include"stdlib.h"
 #include"string.h"
-typedef struct _HashMapEntry{
+typedef struct _StringHashMapEntry{
     char * key;
     unsigned count;
-} HashMapEntry;
+} StringHashMapEntry;
 typedef struct _StringCountHashMap{
-    HashMapEntry ** entries;
+    StringHashMapEntry ** entries;
     unsigned capacity;
+    struct _StringCountHashMap* (*createHashMap)(unsigned size);
+    unsigned (*calculateHashValue)(struct _StringCountHashMap*map,const char * key, unsigned key_len);
+    int (*existInTable)(struct _StringCountHashMap* map, const char * key, unsigned key_len);
+    unsigned (*getOrDefault)(struct _StringCountHashMap* map, const char * key, unsigned key_len);
+    void (*insertEntry)(struct _StringCountHashMap* map, const char * key, unsigned key_len ,unsigned value);
+    void (*printHashMap)(struct _StringCountHashMap* map);
 
 }StringCountHashMap;
-
-StringCountHashMap* createHashMap(unsigned size);
-unsigned calculateHashValue(StringCountHashMap*map,const char * key, unsigned key_len);
-int existInTable(StringCountHashMap* map, const char * key, unsigned key_len);
-unsigned getOrDefault(StringCountHashMap*map, const char * key, unsigned key_len);
-void insertEntry(StringCountHashMap* map, const char * key, unsigned key_len ,unsigned value);
-void printHashMap(StringCountHashMap* map);
+StringCountHashMap* createStringHashMap(unsigned size);
+void freeStringHashMap(StringCountHashMap*map);
 #endif

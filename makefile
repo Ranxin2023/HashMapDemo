@@ -1,9 +1,9 @@
 CC=gcc
 CFLAGS=-Wall -Werror
-DEPS=StringCountHashMap.h 
-SRCS=main.c StringCountHashMap.c
+DEPS=StringCountHashMap.h IntCountHashMap.h
+SRCS=main.c StringCountHashMap.c IntCountHashMap.c
 OBJECTS=$(SRCS:.c=.o)
-TARGET=smdemo
+TARGET=hash_demo
 
 all: $(TARGET)
 

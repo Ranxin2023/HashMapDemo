@@ -27,7 +27,7 @@ Run the Program:
 
 Execute the compiled program:
 ```sh
-./smdemo
+./hash_demo
 ```
 Usage
 The program will:
